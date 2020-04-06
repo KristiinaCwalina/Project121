@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Calendar from './components/Calendar/Calendar';
+import Nav from './components/NavBar/nav';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ class App extends Component {
     const {selectedDate}=this.state;
     return(
       <div className="App">
+        <div className="NavBar"><Nav/></div>
         <div className="MainContent">
         <Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/>
         </div>
