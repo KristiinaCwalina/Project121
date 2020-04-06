@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #222;
+    font-family: "Montserrat";
+}
+
+.navbar {
+    padding: 1.5rem;
+}
+#calendar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 576px){
+
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+}
+.display-4{
+    font-size: 200%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.card-text {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+.card-text-small {
+    text-align: center;
+    padding:0px;
+}
+.card-title {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    padding: 10px;
+    margin: 15px;
+    margin-top: 20px;
+}
+.carousel-caption {
+    position: absolute;
+    top: 75px;
+ }
+ h6 {
+     padding-top: 50px;
+ }
+  .carousel-inner > .item {
+    height: 500px;
+ }
+ .btn-lg{
+     color: aqua;
+ }
+ .btn {
+     margin-top: 75px;
+ }
+
+.fa {
+    color: black;
+    padding: 8px;
+}
+.row {
+    justify-content: center;
+}
+.col-12 {
+    margin-top: 50px;
+}
+.footer-bottom{
+  justify-content: space-around;
+}
