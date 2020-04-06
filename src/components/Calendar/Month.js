@@ -1,5 +1,6 @@
 import React from "react";
-import Weekday from './Weekday'
+import Weekday from './Weekday';
+import Day from "./Day";
 import "./Calendar.css";
 
 const weekdays=[
@@ -44,10 +45,15 @@ class Month extends React.PureComponent {
     }
     renderWeek(fullDate, dayIndex){
         if (fullDate==null){
-            return "null date";
+            return <Day key={dayIndex}/>;
         }
-        const date= fullDate.getDate();
-    return <div key={dayIndex}>{date}</div>
+       
+    return (
+    <Day
+    key={dayIndex}
+    fullDate={fullDate}
+    />
+        )
     }
 }
 function abbreviationFromWeekday(weekday){

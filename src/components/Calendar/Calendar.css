@@ -23,3 +23,38 @@
 .Week {
     display: flex;
 }
+
+.EmptyDay {
+    display: block;
+    flex: 1 0 0%;
+    width: calc(100%/7);
+    margin: 0;
+    padding: 0.8rem;
+    border: 1px solid #dfe3e8;
+}
+
+.EmptyDay + .EmptyDay,
+.EmptyDay + .Day {
+    margin-left: -1px;
+}
+
+.Day {
+    display: block;
+    flex: 1 0 0%;
+    width: 14.28571%;
+    margin: 0;
+    padding: 0.8rem;
+    background: transparent;
+    border: 1px solid #dfe3e8;
+    border-radius: 0;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.Day + .Day,
+.Day + .EmptyDay {
+    margin-left: -1px;
+}
