@@ -19,6 +19,7 @@ class Month extends React.PureComponent {
         this.renderWeek=this.renderWeek.bind(this);
     }
     render() {
+        const {month,year}=this.props;
         const weekdaysMarkup=weekdays.map(weekday=>{
             return(
            <Weekday
@@ -28,7 +29,7 @@ class Month extends React.PureComponent {
             )
         });
 
-        const weeks=getWeeksForMonth(2, 2020);
+        const weeks=getWeeksForMonth(month, year);
         const weeksMarkup=weeks.map((week, index)=>{
             return(
                 <div role="row" className="Week" key={index}>
@@ -44,14 +45,17 @@ class Month extends React.PureComponent {
         )
     }
     renderWeek(fullDate, dayIndex){
+        const {onDayClick}=this.props;
         if (fullDate==null){
             return <Day key={dayIndex}/>;
         }
-       
+      const date=fullDate.getDate(); 
     return (
     <Day
     key={dayIndex}
     fullDate={fullDate}
+    onClick={onDayClick}
+    selected={date===this.props.date}
     />
         )
     }

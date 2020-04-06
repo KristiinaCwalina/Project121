@@ -58,3 +58,9 @@
 .Day + .EmptyDay {
     margin-left: -1px;
 }
+
+.DaySelected{
+    background: #55cc66;
+    border: 1px solid #55cc66;
+    color: aliceblue;
+}
