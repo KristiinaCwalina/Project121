@@ -42,3 +42,12 @@
   justify-content: center;
   margin: 20px;
 }
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.container-fluid {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
