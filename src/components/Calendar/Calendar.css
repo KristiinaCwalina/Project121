@@ -1,5 +1,6 @@
 .CalendarContainer{
-    max-width: 500px;
+    width: 770px;
+    height: 450px;
     background-color: aliceblue;
     padding: 10px;
     box-shadow: aqua;
@@ -7,9 +8,12 @@
 .CalendarContainerTitle{
     font-size: 1.2rem;
     color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .weekdayContainer {
     display: flex;
+    margin-bottom: 10px;
 }
 .Weekday {
     display: block;
@@ -60,7 +64,7 @@
 }
 
 .DaySelected{
-    background: #55cc66;
-    border: 1px solid #55cc66;
+    background: #2df5d3;
+    border: 1px solid #2df5d3;
     color: aliceblue;
 }
