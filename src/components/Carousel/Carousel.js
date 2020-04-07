@@ -17,7 +17,7 @@ function Carousel() {
                 <div className="carousel-caption">
                     <h1 className="text-dark">Welcome to Migracode 1-2-1</h1>
                     <h6 className="font-italic text-dark">Migracode 1-2-1 is an easy web application to manage the lessons given by our team of mentors and classes taken by our students</h6> 
-               <button type="button" className="btn btn-outline-light btn-lg">Read more</button>
+               <button type="button" className="btn btn-light btn-lg">Read more</button>
                 </div>
                 </div>
                 <div className="carousel-item">

@@ -21,3 +21,6 @@
 .btn {
     margin-top: 75px;
 }
+.btn-light {
+    background-color: aqua !important;
+}
