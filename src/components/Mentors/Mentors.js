@@ -1,5 +1,5 @@
 import React from "react";
-import './Mentors.css';
+import '../../App.css';
 
 
 function Mentors() {

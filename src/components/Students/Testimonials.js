@@ -1,5 +1,5 @@
 import React from "react";
-import './Students.css';
+import '../../App.css';
 
 
 function Testimonials() {
