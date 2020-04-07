@@ -6,6 +6,7 @@ import Mentors from './components/Mentors/Mentors';
 import Cards from './components/Mentors/Cards';
 import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -31,6 +32,7 @@ class App extends Component {
         <div className="container-fluid padding"><Cards/></div>
         <div className="container-fluid padding"><Testimonials/></div>
         <div className="container-fluid padding"><Contact/></div>
+        <div className="container-fluid padding"><Footer/></div>
       </div>
     );
   }
