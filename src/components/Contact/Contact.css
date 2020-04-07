@@ -1,0 +1,26 @@
+.padding {
+    padding-bottom: 2rem;
+}
+.container-fluid {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.row {
+    justify-content: center;
+}
+.col-12 {
+    margin-top: 50px;
+}
+.display-4{
+    font-size: 200%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn-lg{
+    color: aqua;
+}
+.btn {
+    margin-top: 75px;
+}
