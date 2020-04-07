@@ -5,7 +5,7 @@ import './Mentors.css';
 function Mentors() {
     return (
         <div className="container-fluid padding">
-        <div className="row welcome text-center">
+        <div className="row text-center padding">
             <div className="col-12">
                 <h2 className="display-4">Meet our Mentors</h2>
             </div>

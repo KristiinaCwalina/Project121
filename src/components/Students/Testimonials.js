@@ -5,7 +5,7 @@ import './Students.css';
 function Testimonials() {
     return (
         <div className="container-fluid padding">
-        <div className="row welcome text-center">
+        <div className="row text-center padding">
             <div className="col-12">
                 <h2 className="display-4">What our students are saying</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque iste ad eius adipisci ipsum dolor, maiores maxime! Velit magnam consequatur fugiat rerum omnis ex ipsam accusantium non amet tempora?</p>
