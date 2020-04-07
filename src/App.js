@@ -3,6 +3,7 @@ import Calendar from './components/Calendar/Calendar';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
 import Mentors from './components/Mentors/Mentors';
+import Cards from './components/Mentors/Cards';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
         <Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/>
         </div>
         <div className="container-fluid padding"><Mentors/></div>
+        <div className="container-fluid padding"><Cards/></div>
       </div>
     );
   }
