@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.App {
+  text-align: center;
+  font-family: "Montserrat";
+  height: 100%;
+  width: 100%;
+  color: #222;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 992px){
+}
+@media (max-width: 768px){
+}
+@media (max-width: 576px){
+}
+
+.container-fluid {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  
+}
+
+.padding {
+  padding-bottom: 2rem;
+ 
+}
+
+.navbar {
+  height: 75px;
+  padding: 0px;
+}
+
+.carousel {
+  padding-left: 20px;
+  padding-right: 20px;;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 75px;
+}
+
+.carousel-inner > .item {
+  height: 500px;
+}
+
+.Calendar {
+  display: flex;
+  justify-content: center;
+}
+
+.display-4{
+  font-size: 2.5rem !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.card-text-small {
+  text-align: center;
+  padding:0px;
+}
+
+.card-title {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.profile-pic {
+  padding: 10px;
+  margin: 15px;
+  margin-top: 20px;
+}
+
+h6 {
+   padding-top: 50px;
+}
+
+
+.btn {
+  margin-top: 55px;
+}
+
+.btn-lg{
+   color: aqua;
+}
+
+.btn-light {
+  background-color: aqua !important;
+}
+
+.fa {
+  color: #222;
+  padding: 8px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.col-12 {
+  margin-top: 50px;
+}
+
+.footer-bottom{
+justify-content: space-around;
+
+}
+
+.col-md-4 {
+  padding-top: 20px;
+  
 }
