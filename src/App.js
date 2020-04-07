@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
-import Calendar from './components/Calendar/Calendar';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
-import Mentors from './components/Mentors/Mentors';
+import Calendar from './components/Calendar/Calendar';
 import Cards from './components/Mentors/Cards';
 import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-
 import './App.css';
 
 
@@ -23,16 +21,13 @@ class App extends Component {
     const {selectedDate}=this.state;
     return(
       <div className="App">
-        <div className="container-fluid padding"><Nav/></div>
-        <div className="container-fluid padding"><Carousel/></div>
-        <div className="MainContent">
-        <Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/>
-        </div>
-        <div className="container-fluid padding"><Mentors/></div>
-        <div className="container-fluid padding"><Cards/></div>
-        <div className="container-fluid padding"><Testimonials/></div>
-        <div className="container-fluid padding"><Contact/></div>
-        <div className="container-fluid padding"><Footer/></div>
+        <div className="Navigation"><Nav/></div>
+        <div className="Carousel"><Carousel/></div>
+        <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
+        <div className="MentorCards"><Cards/></div>
+        <div className="StudentTestimonials"><Testimonials/></div>
+        <div className="Contact"><Contact/></div>
+        <div className="Footer"><Footer/></div>
       </div>
     );
   }

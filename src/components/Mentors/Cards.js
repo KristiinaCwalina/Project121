@@ -4,7 +4,13 @@ import '../../App.css';
 
 function Cards() {
     return (
+
         <div className="container-fluid padding">
+        <div className="row text-center padding">
+            <div className="col-12">
+                <h3 className="display-4">Meet our Mentors</h3>
+            </div>
+        </div>
         <div className="row padding">
             <div className="col-md-4">
                 <div className="card">
