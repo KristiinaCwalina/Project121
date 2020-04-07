@@ -64,7 +64,7 @@ function abbreviationFromWeekday(weekday){
     return weekday.substring(0 , 2);
 }
 
-const WEEK_LENGTH = 7;
+const weekLength = 7;
 function getWeeksForMonth(month, year){
     const firstOfMonth=new Date(year,month,1);
     const firstDayOfWeek=firstOfMonth.getDay();
@@ -77,7 +77,7 @@ function getWeeksForMonth(month, year){
         currentWeek.push(null);
     }
     while(currentDate.getMonth()===month){
-        if(currentWeek.length===WEEK_LENGTH){
+        if(currentWeek.length===weekLength){
             currentWeek=[];
             weeks.push(currentWeek);
         }
