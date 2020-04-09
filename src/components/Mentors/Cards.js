@@ -11,6 +11,8 @@ function Cards() {
                 <h3 className="display-4">Meet our Mentors</h3>
             </div>
         </div>
+        
+       
         <div className="row padding">
             <div className="col-md-4">
                 <div className="card">
@@ -21,7 +23,11 @@ function Cards() {
                     <p className="card-text-small"><small className="text-muted">Teaches Javascript</small></p>
                     <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae minus quo suscipit, ab asperiores, dolores, autem consectetur dolorum cumque eius modi. Unde impedit magnam ratione incidunt laborum provident nemo!</p>
                 </div>
+               
             </div>
+            
+          
+            
             <div className="col-md-4">
                 <div className="card">
                     <div className="img-top" style={{display: "flex", justifyContent:"center"}}>

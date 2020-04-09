@@ -7,6 +7,8 @@ import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import { BrowserRouter, Route} from "react-router-dom";
+import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 
 
 class App extends Component {
@@ -20,7 +22,12 @@ class App extends Component {
   render(){
     const {selectedDate}=this.state;
     return(
+      <BrowserRouter>
       <div className="App">
+        <Route path="/" exact render={
+          ()=>{
+            return(
+              <div>
         <div className="Navigation"><Nav/></div>
         <div className="Carousel"><Carousel/></div>
         <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
@@ -28,7 +35,17 @@ class App extends Component {
         <div className="StudentTestimonials"><Testimonials/></div>
         <div className="Contact"><Contact/></div>
         <div className="Footer"><Footer/></div>
+        </div>);
+            }
+          }/>
+          <Route path="/mentorsprofile" exact render={
+            ()=>{
+              return(
+                <div className="MentorsProfile"><Mentorsprofile/></div>)
+              }
+            }/>
       </div>
+      </BrowserRouter>
     );
   }
   handleDayClick(newDay){
