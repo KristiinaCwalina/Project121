@@ -6,6 +6,7 @@ import Cards from './components/Mentors/Cards';
 import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Counter from './components/Counter/Counter';
 import './App.css';
 import {BrowserRouter, Route} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
@@ -30,6 +31,7 @@ class App extends Component {
               <div>
         <div className="Navigation"><Nav/></div>
         <div className="Carousel"><Carousel/></div>
+        <div className="Carousel"><Counter/></div>
         <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
         <div className="MentorCards"><Cards/></div>
         <div className="StudentTestimonials"><Testimonials/></div>
