@@ -7,13 +7,11 @@
 
 .fb-image-profile
 {
-    margin: -90px 10px 0px 50px;
+    margin: -95px 10px 0px 50px;
     z-index: 9;
     width: 20%; 
 }
 
-@media (max-width:768px)
-{
     
 .fb-profile-text>h1{
     font-weight: 700;
@@ -22,8 +20,24 @@
 
 .fb-image-profile
 {
-    margin: -45px 10px 0px 25px;
+    margin: -100px 10px 0px 25px;
     z-index: 9;
     width: 20%; 
 }
+.countlist h3 {
+	margin: 0;
+	font-weight: 400;
+	line-height: 28px;
+}
+.countlist {
+	text-transform: uppercase
+}
+.countlist li {
+	padding: 15px 30px 15px 0;
+	font-size: 14px;
+	text-align: left;
+}
+.countlist li small {
+	font-size: 12px;
+	margin: 0
 }
