@@ -7,7 +7,7 @@ import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
-import { BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 
 
