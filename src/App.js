@@ -41,7 +41,12 @@ class App extends Component {
           <Route path="/mentorsprofile" exact render={
             ()=>{
               return(
-                <div className="MentorsProfile"><Mentorsprofile/></div>)
+                <div>
+                <div className="MentorsProfile"><Mentorsprofile/></div>
+                <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
+                </div>
+               
+                )
               }
             }/>
       </div>
