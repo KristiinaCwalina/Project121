@@ -122,30 +122,14 @@ justify-content: space-around;
   padding-top: 20px;
   
 }
-
-.fb-profile img.fb-image-lg{
-  z-index: 0;
-  width: 100%;  
-  height: 400px;
-  margin-bottom: 10px;
-}
-
-.fb-image-profile
-{
-  margin: -95px 10px 0px 50px;
-  z-index: 9;
-  width: 20%; 
-}
-
+.span6{
+  background-color: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 70px;
   
-.fb-profile-text>h1{
-  font-weight: 700;
-  font-size:16px;
 }
-
-.fb-image-profile
-{
-  margin: -100px 10px 0px 25px;
-  z-index: 9;
-  width: 20%; 
+.profileContainer{
+  padding-left: 70px;
+  padding-right: 70px;
 }
