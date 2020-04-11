@@ -1,6 +1,0 @@
-https://medium.com/@aeadedoyin/getting-started-with-postgresql-on-windows-201906131300-ee75f066df78
-https://chocolatey.org/packages/postgresql
-https://dba.stackexchange.com/questions/29767/permission-denied-in-file-trying-to-import
-https://stackoverflow.com/questions/5598517/find-the-host-name-and-port-using-psql-commands
-https://kb.objectrocket.com/postgresql/how-to-use-nodejs-to-insert-into-a-postgresql-table-958#just+the+code
-https://kb.objectrocket.com/postgresql/node-postgres-parameterized-query-954
