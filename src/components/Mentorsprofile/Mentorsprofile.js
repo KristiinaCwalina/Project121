@@ -4,11 +4,11 @@ import React from "react";
 
 function Mentorsprofile() {
     return (
-        <div className="profileContainer">
+       <div>
        <nav className= "navbar navbar-expand-md navbar-light bg-light sticky-top">
-           <h2 className="greeting">Meet your Mentor</h2>
+       <a href="/" class="fa fa-home btn-lg"></a>
        </nav>
-
+ <div className="profileContainer">
        <div className="container-fluid well span6">
 	<div className="row-fluid">
         <div className="span2" >
@@ -51,7 +51,7 @@ function Mentorsprofile() {
       </center>   
    
 </div>
-  
+</div>
          
  
 
