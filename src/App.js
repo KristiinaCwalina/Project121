@@ -14,7 +14,6 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import ContactPage from './pages/Contact';
-import './pages/Contact.css';
 class App extends Component {
   constructor(props) {
     super(props);
