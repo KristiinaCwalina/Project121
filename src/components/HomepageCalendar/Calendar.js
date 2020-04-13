@@ -2,7 +2,7 @@ import React from "react";
 import Month from "./Month";
 import "./Calendar.css";
 
-class Calendar extends React.PureComponent {
+class HomepageCalendar extends React.PureComponent {
     render(){
         const {fullDate, onDayClick}=this.props;
 
@@ -43,4 +43,4 @@ function getMonthName (index){
     return months[index];
 }
 
-export default Calendar;
+export default HomepageCalendar;

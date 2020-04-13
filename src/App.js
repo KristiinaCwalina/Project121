@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
-import Calendar from './components/Calendar/Calendar';
+import HomepageCalendar from './components/HomepageCalendar/Calendar';
+import MentorsCalendar from './components/MentorsCalendar/Calendar';
 import Cards from './components/Mentors/Cards';
 import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Counter from './components/Counter/Counter';
 import './App.css';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, Link} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 
 
@@ -22,6 +23,7 @@ class App extends Component {
   }
   render(){
     const {selectedDate}=this.state;
+    
     return(
       <BrowserRouter>
       <div className="App">
@@ -32,7 +34,7 @@ class App extends Component {
         <div className="Navigation"><Nav/></div>
         <div className="Carousel"><Carousel/></div>
         <div className="Carousel"><Counter/></div>
-        <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
+        <div className="HomepageCalendar"><HomepageCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} /></div>
         <div className="MentorCards"><Cards/></div>
         <div className="StudentTestimonials"><Testimonials/></div>
         <div className="Contact"><Contact/></div>
@@ -45,7 +47,7 @@ class App extends Component {
               return(
                 <div>
                 <div className="MentorsProfile"><Mentorsprofile/></div>
-                <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
+                <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} /></div>
                 </div>
                
                 )

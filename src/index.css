@@ -46,7 +46,11 @@
   height: 500px;
 }
 
-.Calendar {
+.HomepageCalendar {
+  display: flex;
+  justify-content: center;
+}
+.MentorsCalendar {
   display: flex;
   justify-content: center;
 }
