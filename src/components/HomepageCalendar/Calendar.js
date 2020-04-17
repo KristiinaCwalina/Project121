@@ -4,13 +4,18 @@ import "./Calendar.css";
 
 class HomepageCalendar extends React.PureComponent {
     render(){
+        
         const {fullDate, onDayClick}=this.props;
+       
+
+       
 
         const dateNumber = fullDate.getDate();
         const monthNumber = fullDate.getMonth();
         const yearNumber = fullDate.getFullYear();
         const monthName = getMonthName (monthNumber);
         return(
+            
             <div className="CalendarContainer">
                 <div className="CalendarContainerTitle">{monthName}</div>
             <Month
@@ -20,8 +25,11 @@ class HomepageCalendar extends React.PureComponent {
             onDayClick={onDayClick}
             />
             </div>
+            
         );
+        
     }
+  
 }
 
 const months = [
@@ -40,7 +48,11 @@ const months = [
 ];
 
 function getMonthName (index){
+    
     return months[index];
+  
+    
 }
+
 
 export default HomepageCalendar;
