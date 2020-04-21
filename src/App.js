@@ -14,6 +14,7 @@ import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 import DailyAvailability from './components/DailyAvailability/DailyAvailability';
 
 
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -66,10 +67,8 @@ class App extends Component {
             ()=>{
               return(
                 <div>
-                
                 <div className="DailyAvailability"><DailyAvailability/></div>
                 </div>
-              
                 )
               }
             }/>
