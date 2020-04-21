@@ -67,7 +67,7 @@ class App extends Component {
             ()=>{
               return(
                 <div>
-                <div className="DailyAvailability"><DailyAvailability/></div>
+                <div className="DailyAvailability">{({match})=><DailyAvailability date={match.params.date} month={match.params.month} year={match.params.year}/>}</div>
                 </div>
                 )
               }
