@@ -8,11 +8,14 @@ class MentorsCalendar extends React.PureComponent {
        
         
         const {fullDate, onDayClick}=this.props;
+       
+       
 
         const dateNumber = fullDate.getDate();
         const monthNumber = fullDate.getMonth();
         const yearNumber = fullDate.getFullYear();
         const monthName = getMonthName (monthNumber);
+       
         return(
             <div className="CalendarContainer">
                 <div className="CalendarContainerTitle">{monthName}</div>

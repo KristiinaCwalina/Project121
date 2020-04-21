@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 function Day({fullDate,onClick,selected}){
     if(fullDate == null){
         return <div className="EmptyDay"/>
@@ -12,6 +13,7 @@ function Day({fullDate,onClick,selected}){
     }
     return(        
     <button className={className} onClick={onClick.bind(this,date)} >{date}</button>
+    
     )
 }
 

@@ -54,31 +54,34 @@ class App extends Component {
               return(
                 <div>
                 <div className="MentorsProfile"><Mentorsprofile/></div>
-                
                 <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} /></div>
-              
+                </div>
+               
+               )
+             }
+           }/>
+           
+            <Route path="/calendar/:date/:month/:year" component={DailyAvailability}  exact render={
+            ()=>{
+              return(
+                <div>
+              <div className="MentorsCalendar">{({match})=><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} date={match.params.date} month={match.params.month} year={match.params.year }/>}</div>
+              <Route path="/calendar/:date/:month/:year" component={DailyAvailability}/>
                 </div>
                
                 )
               }
             }/>
-            <Switch>
-             <Route path="/calendar/:date/:month/:year" component={DailyAvailability} exact render={
-            ()=>{
-              return(
-                <div>
-                <div className="DailyAvailability">{({match})=><DailyAvailability date={match.params.date} month={match.params.month} year={match.params.year}/>}</div>
-                </div>
-                )
-              }
-            }/>
-            </Switch>
+          
+            
       </div>
       </BrowserRouter>
     );
   }
   handleDayClick(newDay){
+   
     const {selectedDate}=this.state;
+   
     this.setState({
       selectedDate: new Date(
         selectedDate.getFullYear(),
