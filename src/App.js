@@ -54,19 +54,19 @@ class App extends Component {
               return(
                 <div>
                 <div className="MentorsProfile"><Mentorsprofile/></div>
-                <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} /></div>
+                <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick}  /></div>
                 </div>
                
                )
              }
            }/>
            
-            <Route path="/calendar/:date/:month/:year" component={DailyAvailability}  exact render={
+            <Route path="/:date/:month/:year" component={DailyAvailability}  exact render={
             ()=>{
               return(
                 <div>
               <div className="MentorsCalendar">{({match})=><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} date={match.params.date} month={match.params.month} year={match.params.year }/>}</div>
-              <Route path="/calendar/:date/:month/:year" component={DailyAvailability}/>
+              
                 </div>
                
                 )
@@ -82,15 +82,22 @@ class App extends Component {
    
     const {selectedDate}=this.state;
    
+   
     this.setState({
       selectedDate: new Date(
         selectedDate.getFullYear(),
         selectedDate.getMonth(),
         newDay
       )
-      })
+      
+      }
+      )
+      
+      
+
   }
 }
 
 
 export default App;
+

@@ -6,7 +6,7 @@ function Mentorsprofile() {
     return (
        <div>
        <nav className= "navbar navbar-expand-md navbar-light bg-light sticky-top">
-       <a href="/" class="fa fa-home btn-lg"></a>
+       <a href="/" className="fa fa-home btn-lg"></a>
        </nav>
  <div className="profileContainer">
        <div className="container-fluid well span6">
@@ -15,7 +15,7 @@ function Mentorsprofile() {
 		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSf2PNJRuzk7SnUuq7OuOq77LQXU28j1YmyHS7FmgdYRfMg85rK&usqp=CAU" className="img-circle"/>
         </div>
         
-        <div class="span8">
+        <div className="span8">
             <h3>Mentor One</h3>
            
             <span><strong>Skills: </strong></span>
