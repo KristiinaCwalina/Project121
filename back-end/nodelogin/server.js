@@ -1,9 +1,5 @@
-const express = require("express");
-const app = express();
-const { Pool } = require("pg");
 const secrets = require("./secrets");
-const bodyParser = require("body-parser");
-
+const { Pool } = require("pg");
 const pool = new Pool({
     user: secrets.dbUser,
     host: 'localhost',
@@ -12,12 +8,16 @@ const pool = new Pool({
     port: 5432,
 })
 
+const express = require("express");
 var app = express();
+var session = require('express-session');
 app.use(session({
     secret: 'secret',
     resave: true,
     saveUninitialized: true
 }));
+
+const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -27,22 +27,25 @@ app.post("/users", (request, response) => {
     var password = request.body.password;
 
     if (name && password && email) {
-        pool.query('INSERT INTO users VALUES ($1, $2, $3)', [name, email, password])
-        response.status(200);
+        pool.query('INSERT INTO users (name, email, password) VALUES ($1, $2, $3)', [name, email, password])
+        response.status(201).send('User created and saved to database.');
     } else {
-        response.status(400);
+        response.status(400).send('Review your requests body.');
     }
 });
 
-app.post('/authenticate', (request, response) => {
+app.post('/auth', (request, response) => {
     var email = request.body.email;
     var password = request.body.password;
+
+    var parameters = [email, password];
     if (email && password) {
-        pool.query('SELECT * FROM users WHERE email = $1 AND password = $2', [email, password],
+        pool.query('SELECT * FROM users WHERE email = $1 AND password = $2', parameters,
             (error, results, fields) => {
-                if (results.length > 0) {
+                if (results.rowCount > 0) {
+                    var userName = results.rows[0].name;
                     request.session.loggedin = true;
-                    request.session.username = email;
+                    request.session.username = userName;
                     response.redirect('/home');
                 } else {
                     response.send('Incorrect Username and/or Password!');
@@ -64,4 +67,5 @@ app.get('/home', (request, response) => {
     response.end();
 });
 
-app.listen(3000);
+var port = 3000;
+app.listen(port, () => console.log(`SERVER LISTENING IN PORT : ${port}`));
