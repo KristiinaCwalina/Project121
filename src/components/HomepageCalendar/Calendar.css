@@ -68,3 +68,7 @@
     border: 1px solid aqua;
     color: black;
 }
+a { 
+    color:inherit !important;
+    text-decoration: none !important;
+}

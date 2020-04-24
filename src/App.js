@@ -38,8 +38,29 @@ class App extends Component {
         <div className="Navigation"><Nav/></div>
         <div className="Carousel"><Carousel/></div>
         <div className="Carousel"><Counter/></div>
+        <div className="HomepageCalendar"><HomepageCalendar fullDate={selectedDate} onDayClick={this.handleDayClick}  /></div>
+                </div>
+               
+               )
+             }
+           }/>
         
-        <div className="HomepageCalendar"><HomepageCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} /></div>
+        <Route path="/:date/:month/:year" component={DailyAvailability}  exact render={
+            ()=>{
+              return(
+                <div>
+              <div className="HomepageCalendar">{({match})=><HomepageCalendar fullDate={selectedDate} onDayClick={this.handleDayClick} date={match.params.date} month={match.params.month} year={match.params.year }/>}</div>
+              
+                </div>
+               
+                )
+              }
+            }/>
+             <Route path="/" exact render={
+          ()=>{
+            return(
+              
+              <div>
        
         <div className="MentorCards"><Cards/></div>
         <div className="StudentTestimonials"><Testimonials/></div>
@@ -61,7 +82,7 @@ class App extends Component {
              }
            }/>
            
-            <Route path="/:date/:month/:year" component={DailyAvailability}  exact render={
+            <Route path="/:date/:month/:year"  exact render={
             ()=>{
               return(
                 <div>
