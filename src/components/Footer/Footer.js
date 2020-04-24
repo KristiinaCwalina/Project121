@@ -15,6 +15,7 @@ function Footer() {
          </div>
          <div className="container-fluid padding">
              <div className="col-12 social text-center"> 
+                 <a href="https://www.linkedin.com/"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
                  <a href="https://www.facebook.com/"><i className="fa fa-facebook" aria-hidden="true"></i></a>
                  <a href="https://twitter.com/"><i className="fa fa-twitter" aria-hidden="true"></i></a>
                  <a href="https://www.instagram.com/"><i className="fa fa-instagram" aria-hidden="true"></i></a>
