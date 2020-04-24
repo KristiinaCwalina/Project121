@@ -19,12 +19,14 @@ class MentorsCalendar extends React.PureComponent {
         return(
             <div className="CalendarContainer">
                 <div className="CalendarContainerTitle">{monthName}</div>
+               
             <Month
             date={dateNumber}
             month={monthNumber}
             year={yearNumber}
             onDayClick={onDayClick}
             />
+            <button type="button" className="btn btn-primary btn-block">Add Availability</button>
             </div>
         );
     }
