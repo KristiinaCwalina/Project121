@@ -1,8 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
 
 
-function Mentorsprofile() {
+class Mentorsprofile extends Component {
+    MentorDetails = {
+        name: "Test Mentor",
+        skills: "HTML/CSS",
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    };
+    render(){
     return (
        <div>
        <nav className= "navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -16,10 +22,10 @@ function Mentorsprofile() {
         </div>
         
         <div className="span8">
-            <h3>Mentor One</h3>
+            <h3>{this.MentorDetails.name}</h3>
            
             <span><strong>Skills: </strong></span>
-            <span className="label label-default">HTML/CSS</span>  
+            <span className="label label-default">{this.MentorDetails.skills}</span>  
         </div>
 </div>
 </div>  
@@ -46,7 +52,7 @@ function Mentorsprofile() {
        </div> 
 <center>
     <p className="text-left"><strong>Bio: </strong><br/>
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    {this.MentorDetails.bio}</p>
       <br/>
       </center>   
    
@@ -57,5 +63,6 @@ function Mentorsprofile() {
 
 );
   }
+}
   
   export default Mentorsprofile;
