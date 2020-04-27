@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import {Link} from "react-router-dom";
 
 
 class Mentorsprofile extends Component {
@@ -12,13 +12,19 @@ class Mentorsprofile extends Component {
     return (
        <div>
        <nav className= "navbar navbar-expand-md navbar-light bg-light sticky-top">
-       <a href="/" className="fa fa-home btn-lg"></a>
+       <ul >
+           <li style={{listStyleType: "none"}}><Link to="/"><i className="fa fa-home"></i></Link></li>
+       </ul>
+       <ul>
+           <li style={{listStyleType: "none"}}><Link to="availabilities/add"><i className="fa fa-plus"></i>Add 1-2-1</Link></li>
+       </ul>
+     
        </nav>
  <div className="profileContainer">
        <div className="container-fluid well span6">
 	<div className="row-fluid">
         <div className="span2" >
-		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSf2PNJRuzk7SnUuq7OuOq77LQXU28j1YmyHS7FmgdYRfMg85rK&usqp=CAU" className="img-circle"/>
+		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSf2PNJRuzk7SnUuq7OuOq77LQXU28j1YmyHS7FmgdYRfMg85rK&usqp=CAU" className="img-circle" alt="default profile holder"/>
         </div>
         
         <div className="span8">

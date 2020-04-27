@@ -9,7 +9,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Counter from './components/Counter/Counter';
 import './App.css';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 import DailyAvailability from './components/DailyAvailability/DailyAvailability';
 
