@@ -1,0 +1,27 @@
+--------------------------------------
+----- POWERSHELL-CREATE DATABASE -----
+--------------------------------------
+
+· Launch as admin
+· Install postgresql12 -> choco install postgresql12 --params '/Password:yourPasswordHere' -y --force
+· Add to PATH -> C:\Program Files\PostgreSQL\12\bin
+· Add to PATH -> C:\Program Files\PostgreSQL\12\data
+· Create new user variable PGDATA -> C:\Program Files\PostgreSQL\12\data
+· Delete everything inside -> C:\Program Files\PostgreSQL\12\data
+· Initialize postgres -> pg_ctl init
+· List databases -> psql -l
+· Create database -> createdb migracode-logIn
+· Connect to database -> psql migracode-logIn
+· Execute sql file to create tables -> \i C:/Users/eduar/Desktop/migracode-logIn-backend/script-to-create-tables.sql
+	* Notice I changed \ -> / !! This is an issue in Windows :( ...
+· List tables -> \dt
+· Close connection -> \q
+
+---------------------------------------
+------ POWERSHELL-CREATE BACKEND ------
+---------------------------------------
+
+· Install express -> npm install express
+· Install express session -> npm install express-session
+· Install postgres -> npm install pg
+· Create node app -> 
