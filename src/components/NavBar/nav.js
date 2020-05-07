@@ -13,7 +13,7 @@ function Nav() {
              
              
       <ul className="nav-item">
-        <a className="nav-link" href="#">LOG IN </a>
+        <a className="btn btn-primary" href="/login">LOG IN </a>
       </ul>
            </div>
   

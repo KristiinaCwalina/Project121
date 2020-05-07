@@ -14,14 +14,9 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Counter from './components/Counter/Counter';
 import './App.css';
-<<<<<<< HEAD
-import {BrowserRouter, Route} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
-
-
-=======
+import LoginPage from './pages/Login';
 import ContactPage from './pages/Contact';
->>>>>>> 23a4e9984476137e8c4b51878117405ce645474b
 class App extends Component {
   constructor(props) {
     super(props);
@@ -30,41 +25,6 @@ class App extends Component {
       selectedDate: new Date()
     }
   }
-<<<<<<< HEAD
-  render(){
-    const {selectedDate}=this.state;
-    return(
-      <BrowserRouter>
-      <div className="App">
-        <Route path="/" exact render={
-          ()=>{
-            return(
-              <div>
-        <div className="Navigation"><Nav/></div>
-        <div className="Carousel"><Carousel/></div>
-        <div className="Carousel"><Counter/></div>
-        <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
-        <div className="MentorCards"><Cards/></div>
-        <div className="StudentTestimonials"><Testimonials/></div>
-        <div className="Contact"><Contact/></div>
-        <div className="Footer"><Footer/></div>
-        </div>);
-            }
-          }/>
-          <Route path="/mentorsprofile" exact render={
-            ()=>{
-              return(
-                <div>
-                <div className="MentorsProfile"><Mentorsprofile/></div>
-                <div className="Calendar"><Calendar fullDate={selectedDate} onDayClick={this.handleDayClick}/></div>
-                </div>
-               
-                )
-              }
-            }/>
-      </div>
-      </BrowserRouter>
-=======
   render() {
     const { selectedDate } = this.state;
     return (
@@ -73,6 +33,9 @@ class App extends Component {
           <Switch>
             <Route path="/contact">
               <ContactPage />
+            </Route>
+            <Route path="/login">
+              <LoginPage />
             </Route>
             <Route path="/">
               <div className="Navigation"><Nav /></div>
@@ -86,7 +49,6 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
->>>>>>> 23a4e9984476137e8c4b51878117405ce645474b
     );
   }
   handleDayClick(newDay) {
