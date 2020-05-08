@@ -1,10 +1,7 @@
- .ContactForm{
+   .ContactForm{
     margin: 0;
     padding: 0;
     text-align: center;
-    background:url(https://papers.co/wallpaper/papers.co-nl78-dark-red-keyboard-coding-36-3840x2400-4k-wallpaper.jpg);
-    background-size: cover;
-    background-position: center;
     font-family: sans-serif;
     }
     .contact-title {

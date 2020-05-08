@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  matchPath
 } from 'react-router-dom';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
@@ -29,6 +30,7 @@ class App extends Component {
     const { selectedDate } = this.state;
     return (
       <Router>
+        {console.log(matchPath('/contact'))}
         <div className="App">
           <Switch>
             <Route path="/contact">
@@ -36,6 +38,9 @@ class App extends Component {
             </Route>
             <Route path="/login">
               <LoginPage />
+            </Route>
+            <Route path="/sign-up">
+              <LoginPage isSignIn = {false } />
             </Route>
             <Route path="/">
               <div className="Navigation"><Nav /></div>

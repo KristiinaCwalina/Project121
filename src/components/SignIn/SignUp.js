@@ -41,7 +41,7 @@ export class SignUp extends Component {
                 
                 <Button className='btn-lg btn-dark btn-block'>Sign Up </Button>
                 <div className='text-center '>
-                    <a href='/log-in'>log in</a>
+                    <a href='/login'>log in</a>
                     <span className='p-2'>|</span>
                     <a href='/forget password'>Forget Password</a>
                 </div>

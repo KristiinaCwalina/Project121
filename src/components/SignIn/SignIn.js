@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { FacebookLoginButton, GoogleLoginButton,LinkendLoginButton } from 'react-social-login-buttons';
+import { FacebookLoginButton, GoogleLoginButton,LinkedInLoginButton } from 'react-social-login-buttons';
 
 
 export class SignIn extends Component {
@@ -25,7 +25,7 @@ export class SignIn extends Component {
                 </div>
                 <FacebookLoginButton className='mt-3 mb-3'/>
                 <GoogleLoginButton/>
-                <LinkendLoginButton/>
+                <LinkedInLoginButton/>
                 <div className='text-center '>
                     <a href='/sign-up'>Sign up</a>
                     <span className='p-2'>|</span>
