@@ -13,7 +13,7 @@ import Cards from './components/Mentors/Cards';
 import Testimonials from './components/Students/Testimonials';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Counter from './components/Counter/Counter';
+//import Counter from './components/Counter/Counter';
 import './App.css';
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 import LoginPage from './pages/Login';
@@ -38,6 +38,11 @@ class App extends Component {
             </Route>
             <Route path="/login">
               <LoginPage />
+            </Route>
+            <Route path="/profil">
+            <div className="Navigation"><Nav /></div>
+              <Mentorsprofile/>
+              <div className="Footer"><Footer /></div>
             </Route>
             <Route path="/sign-up">
               <LoginPage isSignIn = {false } />
