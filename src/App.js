@@ -39,7 +39,7 @@ class App extends Component {
             <Route path="/login">
               <LoginPage />
             </Route>
-            <Route path="/profil">
+            <Route path="/profile">
             <div className="Navigation"><Nav /></div>
               <Mentorsprofile/>
               <div className="Footer"><Footer /></div>

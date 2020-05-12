@@ -7,6 +7,7 @@ export class Mentorsprofile extends Component {
       name: "",
       email: "",
       company: "",
+      languge:"",
       imgSrc: null
     };
   }
@@ -14,6 +15,7 @@ export class Mentorsprofile extends Component {
     fetch(`mentorProfile.json`)
       .then(res => res.json())
       .then(data => {
+        console.log('ttttttttttttt');
         this.setState({
           name: data.name,
           email: data.email,
