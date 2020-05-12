@@ -1,4 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  matchPath
+} from 'react-router-dom';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
 import HomepageCalendar from './components/HomepageCalendar/Calendar';
@@ -9,17 +16,17 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Counter from './components/Counter/Counter';
 import './App.css';
-import {BrowserRouter, Route} from "react-router-dom";
+//import {BrowserRouter, Route} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 import DailyAvailability from './components/DailyAvailability/DailyAvailability';
-
-
+import LoginPage from './pages/Login';
+import ContactPage from './pages/Contact';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.handleDayClick=this.handleDayClick.bind(this);
-    this.state={
+    this.handleDayClick = this.handleDayClick.bind(this);
+    this.state = {
       selectedDate: new Date()
     }
   }
@@ -27,8 +34,23 @@ class App extends Component {
     const {selectedDate}=this.state;
     
     return(
-      <BrowserRouter>
+      <Router>
       <div className="App">
+
+      <Route path="/contact">
+              <ContactPage />
+            </Route>
+            <Route path="/login">
+              <LoginPage />
+            </Route>
+            <Route path="/sign-up">
+              <LoginPage isSignIn = {false } />
+            </Route>
+            <Route path="/profile">
+            <div className="Navigation"><Nav /></div>
+              <Mentorsprofile/>
+              <div className="Footer"><Footer /></div>
+            </Route>
         <Route path="/" exact render={
           ()=>{
             return(
@@ -66,6 +88,10 @@ class App extends Component {
         <div className="StudentTestimonials"><Testimonials/></div>
         <div className="Contact"><Contact/></div>
         <div className="Footer"><Footer/></div>
+
+
+
+        
         </div>);
          
             }
@@ -96,7 +122,7 @@ class App extends Component {
           
             
       </div>
-      </BrowserRouter>
+      </Router>
     );
   }
   handleDayClick(newDay){
