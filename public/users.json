@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "email": "carlos@migracode.org",
+            "password": "123"
+        },
+        {
+            "email": "jordi@migracode.org",
+            "password": "123"
+        }
+    ]
+}

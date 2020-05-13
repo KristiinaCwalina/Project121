@@ -36,10 +36,10 @@ export class Mentorsprofile extends Component {
             </div>
             <div className="col-8">
               <ul className="list-group">
-                <li className="list-group-item">Name {this.state.name}</li>
-                <li className="list-group-item">Email{this.state.email}</li>
-                <li className="list-group-item">Company{this.state.company}</li>
-                <li className="list-group-item">Skill{this.state.languages}</li>
+                <li className="list-group-item">Name: {this.state.name}</li>
+                <li className="list-group-item">Email: {this.state.email}</li>
+                <li className="list-group-item">Company: {this.state.company}</li>
+                <li className="list-group-item">Skill: {this.state.languages}</li>
               </ul>
 
             </div>
