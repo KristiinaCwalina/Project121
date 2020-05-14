@@ -10,7 +10,7 @@ export class SignIn extends Component {
                 <h1>
                     <span className='font-weight-bold'>Migracode 121</span>
                 </h1>
-                <h3 className='text-center'>Wellcome</h3>
+                <h3 className='text-center'>Welcome</h3>
                 <FormGroup>
                     <Label>Email</Label>
                     <Input type='email' placeholder="Email" />
@@ -29,7 +29,7 @@ export class SignIn extends Component {
                 <div className='text-center '>
                     <a href='/sign-up'>Sign up</a>
                     <span className='p-2'>|</span>
-                    <a href='/forget password'>Forget Password</a>
+                    <a href='/forget password'>Forgot Password</a>
                 </div>
             </Form>
         )

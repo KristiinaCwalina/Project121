@@ -47,11 +47,7 @@ class App extends Component {
             <Route path="/sign-up">
               <LoginPage isSignIn = {false } />
             </Route>
-            <Route path="/profile">
-            <div className="Navigation"><Nav /></div>
-              <Mentorsprofile/>
-              <div className="Footer"><Footer /></div>
-            </Route>
+           
             <Route path="/availability">
               <MentorLog/>
             </Route>
@@ -104,8 +100,10 @@ class App extends Component {
             ()=>{
               return(
                 <div>
+                  <div className="Navigation"><Nav/></div>
                 <div className="MentorsProfile"><Mentorsprofile/></div>
                 <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick}  /></div>
+               
                 </div>
                
                )

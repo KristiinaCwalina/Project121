@@ -10,17 +10,17 @@ export class SignUp extends Component {
                 <h1>
                     <span className='font-weight-bold'>Migracode 121</span>
                 </h1>
-                <h3 className='text-center-1'>Wellcome</h3>
+                <h3 className='text-center-1'>Welcome</h3>
                 <FormGroup>
                     <Label>Full Name</Label>
                     <Input type='name' placeholder="Full Name" />
                 </FormGroup>
                 <FormGroup>
-                    <Label>User Name</Label>
+                    <Label>Username</Label>
                     <Input type='name' placeholder="User Name" />
                 </FormGroup>
                 <FormGroup>
-                    <Label>User</Label>
+                    <Label>User Type</Label>
                     <select className='form-control'>
                     <option value='Mentor'>Mentor</option>
                     <option value='Student'>Student</option>
@@ -41,9 +41,9 @@ export class SignUp extends Component {
                 
                 <Button className='btn-lg btn-dark btn-block'>Sign Up </Button>
                 <div className='text-center '>
-                    <a href='/login'>log in</a>
+                    <a href='/login'>Log in</a>
                     <span className='p-2'>|</span>
-                    <a href='/forget password'>Forget Password</a>
+                    <a href='/forget password'>Forgot Password</a>
                 </div>
             </Form>
             </div>

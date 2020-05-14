@@ -4,8 +4,8 @@ function ContactPage() {
     return (
         <div className="ContactForm">
             <div className="contact-title">
-                <h1>Contacts us</h1>
-                <h2>we are always ready to contact you!</h2>
+                <h1>Contact us</h1>
+                <h2>We are always ready to contact you!</h2>
             </div>
             <div className="contactForm">
                 <form id="contactForm" method="post" action="">
