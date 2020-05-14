@@ -12,7 +12,7 @@ function Nav() {
               <span className="navbar-toggler-icon"></span>  
              
              
-      <ul className="nav-item">
+      <ul className="navbar-nav justify-content-end">
         <a className="nav-link" href="/login">LOG IN </a>
         <a className="nav-link" href="/sign-up">SIGN UP </a>
       </ul>
