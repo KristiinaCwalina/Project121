@@ -100,7 +100,7 @@ class App extends Component {
             ()=>{
               return(
                 <div>
-                  <div className="Navigation"><Nav/></div>
+                
                 <div className="MentorsProfile"><Mentorsprofile/></div>
                 <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick}  /></div>
                
