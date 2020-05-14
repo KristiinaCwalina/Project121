@@ -17,7 +17,8 @@ class DailyAvailability extends Component {
             );
         })
         .catch(err=>console.error(err));
-        console.log(this.state)
+        console.log(this.state
+            )
     }
 render(){
     const availabilityItem=this.state.availabilities.map((availability)=>{
