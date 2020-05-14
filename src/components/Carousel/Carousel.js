@@ -27,11 +27,13 @@ function Carousel() {
                     <img src="https://www.solidbackgrounds.com/images/4096x2304/4096x2304-salmon-pink-solid-color-background.jpg" className="d-block w-100" alt="salmon pink solid background"/>
                 </div>
             </div>
-            <a className="left carousel-control" href="#slides" data-slide="prev">
-                <span className="glyphicon glyphicon-chevron-left"></span>
+            <a className="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
               </a>
-              <a className="right carousel-control" href="#slides" data-slide="next">
-                <span className="glyphicon glyphicon-chevron-right"></span>
+              <a className="carousel-control-next" href="#slides" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
               </a>
         </div>
         </div>
