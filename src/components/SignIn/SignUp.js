@@ -17,7 +17,7 @@ export class SignUp extends Component {
                 </FormGroup>
                 <FormGroup>
                     <Label>Username</Label>
-                    <Input type='name' placeholder="User Name" />
+                    <Input type='name' placeholder="Username" />
                 </FormGroup>
                 <FormGroup>
                     <Label>User Type</Label>
@@ -43,7 +43,7 @@ export class SignUp extends Component {
                 <div className='text-center '>
                     <a href='/login'>Log in</a>
                     <span className='p-2'>|</span>
-                    <a href='/forget password'>Forgot Password</a>
+                    <a href='/forgotpassword'>Forgot Password</a>
                 </div>
             </Form>
             </div>

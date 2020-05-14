@@ -5,14 +5,13 @@ function ContactPage() {
         <div className="ContactForm">
             <div className="contact-title">
                 <h1>Contact us</h1>
-                <h2>We are always ready to contact you!</h2>
             </div>
             <div className="contactForm">
                 <form id="contactForm" method="post" action="">
-                    <input name="name" type="text" className="formControl" placeholder="Your name..." required /><br />
+                    <input name="name" type="text" className="formControl" placeholder="Your name" required /><br />
 
-                    <input name="email" type="text" className="formControl" placeholder="Your email..." required /><br />
-                    <textarea name="massage" className="formControl" placeholder="Message.." rows="4" required></textarea><br />
+                    <input name="email" type="text" className="formControl" placeholder="Your email" required /><br />
+                    <textarea name="massage" className="formControl" placeholder="Message" rows="4" required></textarea><br />
 
                     <input type="submit" className="formControlSubmit" value="SEND MESSAGE" />
                 </form>

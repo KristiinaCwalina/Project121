@@ -26,10 +26,10 @@ export class SignIn extends Component {
                 <FacebookLoginButton className='mt-3 mb-3'/>
                 <GoogleLoginButton/>
                 <LinkedInLoginButton/>
-                <div className='text-center '>
-                    <a href='/sign-up'>Sign up</a>
+                <div className='text-center'>
+                    <a href='/signup'>Sign up</a>
                     <span className='p-2'>|</span>
-                    <a href='/forget password'>Forgot Password</a>
+                    <a href='/forgotpassword'>Forgot Password</a>
                 </div>
             </Form>
         )

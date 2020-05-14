@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  matchPath
-} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
 import HomepageCalendar from './components/HomepageCalendar/Calendar';
