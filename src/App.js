@@ -21,6 +21,7 @@ import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 import DailyAvailability from './components/DailyAvailability/DailyAvailability';
 import LoginPage from './pages/Login';
 import ContactPage from './pages/Contact';
+import  MentorLog  from './components/MentorsTime/MentorLog';
 
 class App extends Component {
   constructor(props) {
@@ -50,6 +51,9 @@ class App extends Component {
             <div className="Navigation"><Nav /></div>
               <Mentorsprofile/>
               <div className="Footer"><Footer /></div>
+            </Route>
+            <Route path="/availability">
+              <MentorLog/>
             </Route>
         <Route path="/" exact render={
           ()=>{
@@ -96,7 +100,7 @@ class App extends Component {
          
             }
           }/>
-          <Route path="/mentorsprofile" exact render={
+          <Route path="/profile" exact render={
             ()=>{
               return(
                 <div>

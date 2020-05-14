@@ -3,7 +3,7 @@ import MentorsDetails from './MentorsDetails';
 import MentorsTime from './MentorsTime';
 import Confirm from './Confirm';
 import Success from './Success';
-export class MentorsLog extends Component {
+export class MentorLog extends Component {
     state = {
         step: 1,
         firstName: '',
@@ -103,4 +103,4 @@ export class MentorsLog extends Component {
 
     }
 };
-export default MentorsLog;
+export default MentorLog;
