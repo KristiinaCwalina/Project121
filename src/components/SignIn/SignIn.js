@@ -27,7 +27,7 @@ export class SignIn extends Component {
                 <GoogleLoginButton/>
                 <LinkedInLoginButton/>
                 <div className='text-center'>
-                    <a href='/signup'>Sign up</a>
+                    <a href='/sign-up'>Sign up</a>
                     <span className='p-2'>|</span>
                     <a href='/forgotpassword'>Forgot Password</a>
                 </div>

@@ -49,6 +49,8 @@
 .HomepageCalendar {
   display: flex;
   justify-content: center;
+ 
+ 
 }
 .MentorsCalendar {
   display: flex;
@@ -112,10 +114,12 @@ h6 {
 
 .row {
   justify-content: center;
+ 
 }
 
 .col-12 {
   margin-top: 50px;
+ 
 }
 
 .footer-bottom{
