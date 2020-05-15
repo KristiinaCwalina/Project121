@@ -6,6 +6,7 @@ import { FacebookLoginButton, GoogleLoginButton,LinkedInLoginButton } from 'reac
 export class SignIn extends Component {
     render() {
         return (
+            <div className='background'>
             <Form className='login-form'>
                 <h1>
                     <span className='font-weight-bold'>Migracode 121</span>
@@ -32,6 +33,7 @@ export class SignIn extends Component {
                     <a href='/forget password'>Forget Password</a>
                 </div>
             </Form>
+            </div>
         )
     }
 }

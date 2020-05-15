@@ -8,6 +8,7 @@ export class MentorsDetails extends Component {
     }
     render() {
         return (
+            <div className='background'>
             <div className='form-container'>
                 <h1 className='mb-5'>Wellcome</h1>
                 <div className='form-group'>
@@ -20,6 +21,7 @@ export class MentorsDetails extends Component {
                 <div className='text-right'>
                     <button className='btn btn-primary' onClick={this.continue}>Creat shedule</button>
                 </div>
+            </div>
             </div>
         );
     }

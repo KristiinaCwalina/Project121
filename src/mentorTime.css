@@ -1,0 +1,44 @@
+.login-form{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+    color: black;
+  }
+  .text-white{
+    font-size: 32px;
+    line-height: 10px;
+    color: rgb(240, 235, 235);
+  }
+  .sign-up-form{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    height: 100%;
+    color: black;
+  }
+  .form-container{
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 15px 16px ,17px #4286f4;
+  }
+  .h1{
+    text-align: center;
+  }
+  .background{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: rgb(193, 206, 235);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  

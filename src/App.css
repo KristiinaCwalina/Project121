@@ -36,38 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.login-form{
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-  height: 100%;
-}
-.taxt-white{
-  font-size: 32px;
-  line-height: 10px;
-  color: #fff;
-}
-.sign-up-form{
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  margin: auto;
-  height: 100%;
-}
-.form-container{
-  background: #fff;
-  border-radius: 20px;
-  padding: 20px 80px;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 15px 16px ,17px #4286f4;
-}
-.h1{
-  text-align: center;
-}
-.taxt-white{
-  font-size: 32px;
-  line-height: 10px;
-  color: #fff;
-};

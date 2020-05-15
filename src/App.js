@@ -16,6 +16,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Counter from './components/Counter/Counter';
 import './App.css';
+import './mentorTime.css';
 //import {BrowserRouter, Route} from "react-router-dom";
 import Mentorsprofile from './components/Mentorsprofile/Mentorsprofile';
 import DailyAvailability from './components/DailyAvailability/DailyAvailability';
@@ -46,11 +47,6 @@ class App extends Component {
             </Route>
             <Route path="/sign-up">
               <LoginPage isSignIn = {false } />
-            </Route>
-            <Route path="/profile">
-            <div className="Navigation"><Nav /></div>
-              <Mentorsprofile/>
-              <div className="Footer"><Footer /></div>
             </Route>
             <Route path="/availability">
               <MentorLog/>
@@ -87,7 +83,6 @@ class App extends Component {
             return(
               
               <div>
-       
         <div className="MentorCards"><Cards/></div>
         <div className="StudentTestimonials"><Testimonials/></div>
         <div className="Contact"><Contact/></div>
