@@ -1,12 +1,11 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Month from "./Month";
 import "./Calendar.css";
 
 class MentorsCalendar extends React.PureComponent {
     render(){
       
-       
-        
         const {fullDate, onDayClick}=this.props;
        
        
@@ -26,7 +25,7 @@ class MentorsCalendar extends React.PureComponent {
             year={yearNumber}
             onDayClick={onDayClick}
             />
-            <button type="button" className="btn btn-primary btn-block">Add Availability</button>
+            <Link to="/availability" role="button" className="btn btn-primary btn-block" >Add Availability</Link>
             </div>
         );
     }

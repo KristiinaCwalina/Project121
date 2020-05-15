@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  matchPath
-} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Nav from './components/NavBar/nav';
 import Carousel from './components/Carousel/Carousel';
 import HomepageCalendar from './components/HomepageCalendar/Calendar';
@@ -48,6 +42,7 @@ class App extends Component {
             <Route path="/sign-up">
               <LoginPage isSignIn = {false } />
             </Route>
+           
             <Route path="/availability">
               <MentorLog/>
             </Route>
@@ -99,8 +94,10 @@ class App extends Component {
             ()=>{
               return(
                 <div>
+                
                 <div className="MentorsProfile"><Mentorsprofile/></div>
                 <div className="MentorsCalendar"><MentorsCalendar fullDate={selectedDate} onDayClick={this.handleDayClick}  /></div>
+                
                 </div>
                
                )
