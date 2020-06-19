@@ -5,6 +5,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 export class SignUp extends Component {
     render() {
         return (
+            <div className='background'>
             <div>
                  <Form className='sign-up-form'>
                 <h1>
@@ -46,6 +47,7 @@ export class SignUp extends Component {
                     <a href='/forgotpassword'>Forgot Password</a>
                 </div>
             </Form>
+            </div>
             </div>
         )
     }

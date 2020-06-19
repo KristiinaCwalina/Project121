@@ -25,6 +25,7 @@ export class Confirm extends Component {
             values: { appointments, location }
         } = this.props;
         return (
+            <div className='background'>
             <div className='form-container'>
                 <h1 className='mb-5'>confirm</h1>
                 <ul className="list-group">
@@ -49,6 +50,7 @@ export class Confirm extends Component {
                         <button className='btn btn-primary' onClick={this.continue}>Continue</button>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
